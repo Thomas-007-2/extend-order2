@@ -1,0 +1,17 @@
+{
+  "name": "order-extension-app",
+  "version": "1.0.0",
+  "description": "Order extension application",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 3000 -c-1 --cors -a localhost",
+    "build": "echo 'No build step required'",
+    "start": "http-server -p 8080"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

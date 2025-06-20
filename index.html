@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellung verlängern</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Bestellung verlängern</h1>
+            <p class="subtitle">Wähle die gewünschte Verlängerungsdauer</p>
+        </header>
+
+        <main class="main-content">
+            <div class="options-grid">
+                <button class="option-btn" data-duration="1">
+                    <div class="duration">1 Stunde</div>
+                </button>
+
+                <button class="option-btn" data-duration="2">
+                    <div class="duration">2 Stunden</div>
+                </button>
+
+                <button class="option-btn" data-duration="4">
+                    <div class="duration">4 Stunden</div>
+                </button>
+
+                <button class="option-btn" data-duration="24">
+                    <div class="duration">24 Stunden</div>
+                </button>
+            </div>
+
+            <div id="confirmationSection" class="confirmation-section" style="display: none;">
+                <div class="confirmation-card">
+                    <h3>Bestätigung</h3>
+                    <p id="selectedDuration">Ausgewählte Dauer: </p>
+                    <button id="confirmBtn" class="confirm-btn">
+                        Verlängerung bestätigen
+                    </button>
+                </div>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Bearbeitung läuft...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
